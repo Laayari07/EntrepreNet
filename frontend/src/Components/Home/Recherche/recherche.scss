@@ -1,0 +1,23 @@
+.recherche {
+    display: flex;
+    align-items: center;
+  }
+  
+  .recherche .ass {
+    padding: 15px;
+    font-size: 25px;
+  }
+  
+  .recherche input {
+    padding: 12px; /* Réduire légèrement le rembourrage pour un look plus élégant */
+    font-size: 20px;
+    outline: none;
+    border: 2px solid #ccc; /* Ajouter une bordure pour une apparence plus définie */
+    border-radius: 5px; /* Ajouter un peu de rayon pour adoucir les coins */
+    transition: border-color 0.3s ease; /* Ajouter une transition pour un effet de survol plus fluide */
+  }
+  
+  .recherche input:focus {
+    border-color: #6c63ff; /* Changer la couleur de la bordure lorsque l'élément est en focus */
+  }
+  

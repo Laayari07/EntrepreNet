@@ -15,12 +15,19 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="left">
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <span>EntrepreNet</span>
-        </Link>
+      <div>
+        <img src="./img/logo4.png" alt="Logoipsum" />
+      </div>
         <HomeOutlinedIcon />
         <GridViewOutlinedIcon />
         <div className="search">
+          <select className="select-container">
+          <option value="option1" default selected>Filter..</option>
+
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
           <SearchOutlinedIcon />
           <input type="text" placeholder="Search..." />
         </div>

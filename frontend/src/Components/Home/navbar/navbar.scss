@@ -10,7 +10,7 @@
   background-color: white;
   color: black;
   z-index: 999;
-
+border-radius: 20px;
   .left {
     display: flex;
     align-items: center;
@@ -22,19 +22,63 @@
       color: darkblue;
     }
 
+
+
     .search {
       display: flex;
       align-items: center;
       gap: 10px;
       border: 1px solid lightgray;
-      border-radius: 5px;
+      border-radius: 50px;
       padding: 5px;
-
+      outline: none;
+      .select-container {
+ 
+          /* Reset Select */
+          outline: 10px red;
+          border: 0;
+          box-shadow: none;
+          /* Personalize */
+          flex: 1;
+          padding: 0 1em;
+          background-color: var(--darkgray);
+          background-image: none;
+          cursor: pointer;
+          width: 100px;
+        }
+        /* Remove IE arrow */
+        select::-ms-expand {
+          display: none;
+        }
+        /* Custom Select wrapper */
+        .select {
+          position: relative;
+          display: flex;
+          width: 20em;
+          height: 3em;
+          border-radius: .25em;
+        }
+        /* Arrow */
+        .select::after {
+          content: '\25BC';
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 1em;
+          background-color: #34495e;
+          transition: .25s all ease;
+          pointer-events: none;
+        }
+        /* Transition */
+        .select:hover::after {
+          color: #f39c12;
+        }    
       input {
         border: none;
-        width: 500px;
+        width: 300px;
         background-color: transparent;
         color: black;
+        outline: none;
       }
     }
   }

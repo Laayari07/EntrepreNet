@@ -1,12 +1,12 @@
-import Stories from "../../Components/Home/stories/Stories";
 import Posts from "../../Components/Home/posts/Posts";
 import Share from "../../Components/Home/share/Share";
+import Recherche from "../../Components/Home/Recherche/Recherche";
 import "./home.scss";
-
+import Navbar from "../../Components/Home/navbar/Navbar";
 const Home = () => {
   return (
     <div className="home">
-      <Stories />
+    <Navbar />
       <Share />
       <Posts />
     </div>
